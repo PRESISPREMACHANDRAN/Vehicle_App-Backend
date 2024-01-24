@@ -16,6 +16,12 @@ app.post("/add",(req,res)=>{
     res.json({"status":"Success","data":data})
 })
 
+// viewAll vehicle 
+app.post("/viewAll",(req,res)=>{
+    var data=req.body
+    res.json({"status":"success","data":data})
+})
+
 app.listen(4000,()=>{
     console.log("server starts running.........")
 })
